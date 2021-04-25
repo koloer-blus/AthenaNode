@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import mongoInstance from './connect';
 import * as type from './type/index';
 import * as dbName from './model.name';
-import * as util from '../../utils';
+import * as util from '@/utils';
 
 type AFindKey = Record<string, any>
 

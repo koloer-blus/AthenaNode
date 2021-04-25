@@ -1,6 +1,6 @@
 import express from 'express';
 import _ from 'lodash';
-import mongo from '../db/mongodb/member.model';
+import * as mongo from '@/db/mongodb/index';
 const router = express.Router();
 
 /* GET home page. */
@@ -20,7 +20,7 @@ router.get('/', function (req, res, next) {
   //   if (err) return console.error(err);
   //   console.log(fluffy)
   // });
-  mongo.find(function (err, fluffy) {
+  mongo.Member.find(function (err, fluffy) {
     if (err) return console.error(err);
     console.log(fluffy)
   })

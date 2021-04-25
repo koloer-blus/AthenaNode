@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+require('module-alias/register');
 import app from '../app';
 const debug = require('debug')('node-back:server');
 const http = require('http');
