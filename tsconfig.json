@@ -10,12 +10,12 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "node_modules/*",
-        "src/types/*"
-      ]
+      "@/*": ["src/*"],
     }
   },
+  "typeRoots": [
+    "src/types" // 指定 d.ts 文件的位置，根据具体情况修改
+  ],
   "include": [
     "src/**/*",
     "bin/www.ts"
