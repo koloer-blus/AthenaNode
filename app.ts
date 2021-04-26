@@ -6,11 +6,15 @@ import logger from 'morgan';
 import cors from 'cors';
 
 import indexRouter from './src/routes/index';
-import usersRouter from './src/routes/users';
+import memberRouter from './src/routes/member';
+import meetRouter from './src/routes/meet';
+import roomRouter from './src/routes/room';
+import groupRouter from './src/routes/group';
+import organizationRouter from './src/routes/organization';
 
 const app = express();
 const corsOptions = {
-  origin: ['allstack.space', '10.2.211.26']
+  origin: '*'
 }
 
 // view engine setup
@@ -24,7 +28,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/member', memberRouter);
+app.use('/meet', meetRouter);
+app.use('/organization', organizationRouter);
+app.use('/group', groupRouter);
+app.use('/room', roomRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
