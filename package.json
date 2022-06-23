@@ -1,17 +1,30 @@
 {
-    "name": "opencv",
-    "version": "0.0.0",
-    "private": true,
-    "scripts": {
-        "start": "nodemon ./bin/www"
-    },
     "dependencies": {
-        "cookie-parser": "~1.4.4",
-        "debug": "~2.6.9",
-        "express": "~4.16.1",
-        "http-errors": "~1.6.3",
-        "jade": "~1.11.0",
-        "morgan": "~1.9.1",
-        "nodemon": "^2.0.13"
-    }
+        "@koa/router": "^10.1.1",
+        "http-proxy-middleware": "^2.0.6",
+        "koa": "^2.13.4",
+        "koa-json": "^2.0.2",
+        "koa-static": "^5.0.0",
+        "koa2-connect": "^1.0.2",
+        "nodemon": "^2.0.16"
+    },
+    "scripts": {
+        "start": "nodemon server/index.js"
+    },
+    "name": "athena-node",
+    "version": "1.0.0",
+    "main": "server.js",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/baiziyu-fe/AthenaNode.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/baiziyu-fe/AthenaNode/issues"
+    },
+    "homepage": "https://github.com/baiziyu-fe/AthenaNode#readme",
+    "description": ""
 }
