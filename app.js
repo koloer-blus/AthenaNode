@@ -1,6 +1,7 @@
 const Koa = require("koa");
 const Json = require('koa-json')
 const Logger = require("./middleware/logger");
+const Proxy = require("./middleware/proxy");
 
 const app = new Koa();
 
